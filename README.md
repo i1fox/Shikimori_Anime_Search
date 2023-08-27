@@ -5,4 +5,4 @@
 
 Для работы кода необходимо расширение Tampermonkey.
 
-![ScreenShot01575](https://github.com/i1fox/Shikimori_Anime_Search/assets/81281024/0c8e8b8f-28c6-4240-ad87-4f61889d4258)
+![ScreenShot01576](https://github.com/i1fox/Shikimori_Anime_Search/assets/81281024/8f118501-6ffc-43af-821c-c3fe4578b69a)
