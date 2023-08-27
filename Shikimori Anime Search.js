@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Shikimori Anime Search
-// @version      1.4
+// @version      1.5
 // @description  Добавляет кнопки поиска на шикимори, для удобного поиска аниме на других сайтах.
 // @author       Foksi
 // @match https://shikimori.me/*
@@ -25,6 +25,9 @@ function start(){
 					$(".watch-online-placeholer").append(
 					"<div class='block HDRezka'><a target=_blank href='https://rezka.ag/search/?do=search&subaction=search&q=" + name + "' class='b-link_button dark watch_link '>Найти на HDRezka</a></div>"
                     )
+                    $(".watch-online-placeholer").append(
+					"<div class='block AnimeVost'><a target=_blank href='https://animevost.tv/?do=search&subaction=search&story=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeVost</a></div>"
+					)
                     $(".watch-online-placeholer").append(
 					"<div class='block AnimeStars'><a target=_blank href='https://animestars.org/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeStars</a></div>"
 					)
