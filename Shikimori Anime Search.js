@@ -6,6 +6,7 @@
 // @match        *://shikimori.me/*
 // @match        *://shikimori.one/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=shikimori.me
+// @homepageURL  https://github.com/i1fox/Shikimori_Anime_Search
 
 // ==/UserScript==
 
