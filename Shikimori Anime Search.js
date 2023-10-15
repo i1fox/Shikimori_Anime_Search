@@ -1,15 +1,20 @@
 // ==UserScript==
 // @name         Shikimori Anime Search
-// @version      1.5
+// @version      1.6
 // @description  Добавляет кнопки поиска на шикимори, для удобного поиска аниме на других сайтах.
 // @author       Foksi
-// @match https://shikimori.me/*
-// @match http://shikimori.me/*
+// @match        *://shikimori.me/*
+// @match        *://shikimori.one/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=shikimori.me
+// @homepageURL  https://github.com/i1fox/Shikimori_Anime_Search
+// @updateURL    https://raw.githubusercontent.com/i1fox/Shikimori_Anime_Search/main/Shikimori%20Anime%20Search.js
+// @downloadURL  https://raw.githubusercontent.com/i1fox/Shikimori_Anime_Search/main/Shikimori%20Anime%20Search.js
 
 // ==/UserScript==
 
 function start(){
-	if (window.location.href.indexOf("https://shikimori.me/animes/") !== -1) {
+	if (window.location.href.indexOf("//shikimori.me/animes/") !== -1);
+    if (window.location.href.indexOf("//shikimori.one/animes/") !== -1); {
 		setTimeout(function () {
 			if (!$(".watch-online-placeholer").length) {
 				$(".c-info-right").append("<div class='watch-online-placeholer'></div>");
@@ -48,5 +53,3 @@ function start(){
 }
 
 $(document).ready(start);
-$(document).on('page:load', start);
-$(document).on('turbolinks:load', start);
