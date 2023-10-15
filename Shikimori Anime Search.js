@@ -11,7 +11,7 @@
 
 function start(){
 	if (window.location.href.indexOf("//shikimori.me/animes/") !== -1);
-    if (window.location.href.indexOf("//shikimori.one/animes/") !== -1); {
+        if (window.location.href.indexOf("//shikimori.one/animes/") !== -1); {
 		setTimeout(function () {
 			if (!$(".watch-online-placeholer").length) {
 				$(".c-info-right").append("<div class='watch-online-placeholer'></div>");
