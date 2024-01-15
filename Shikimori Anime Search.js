@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Shikimori Anime Search
-// @version      1.6
+// @version      1.7
 // @description  Добавляет кнопки поиска на шикимори, для удобного поиска аниме на других сайтах.
 // @author       Foksi
 // @match        *://shikimori.me/*
@@ -26,22 +26,25 @@ function start(){
 				if (!$(".AnimeSearch").length) {
 					let name = $('.head > h1').text().split("/")[1];
 					$(".watch-online-placeholer").append(
-					"<div class='block HDRezka'><a target=_blank href='https://rezka.ag/search/?do=search&subaction=search&q=" + name + "' class='b-link_button dark watch_link '>Найти на HDRezka</a></div>"
+					"<div class='block HDRezka'><a target=_blank href='https://rezka.ag/search/?do=search&subaction=search&q=" + name + "' class='b-link_button dark watch_link'>Найти на HDRezka</a></div>"
                     )
                     $(".watch-online-placeholer").append(
-					"<div class='block AnimeVost'><a target=_blank href='https://animevost.tv/?do=search&subaction=search&story=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeVost</a></div>"
+					"<div class='block AnimeVost'><a target=_blank href='https://animevost.tv/?do=search&subaction=search&story=" + name + "' class='b-link_button dark watch_link'>Найти на AnimeVost</a></div>"
 					)
                     $(".watch-online-placeholer").append(
-					"<div class='block AnimeStars'><a target=_blank href='https://animestars.org/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeStars</a></div>"
+					"<div class='block AnimeStars'><a target=_blank href='https://animestars.org/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link'>Найти на AnimeStars</a></div>"
 					)
                     $(".watch-online-placeholer").append(
-					"<div class='block AnimeGo'><a target=_blank href='https://animego.org/search/all?q=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeGo</a></div>"
+					"<div class='block AnimeGo.org'><a target=_blank href='https://animego.org/search/all?q=" + name + "' class='b-link_button dark watch_link'>Найти на AnimeGo.org</a></div>"
+                    )
+                    $(".watch-online-placeholer").append(
+					"<div class='block AnimeGo.online'><a target=_blank href='https://animego.online/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link'>Найти на AnimeGo.online</a></div>"
                     )
 					$(".watch-online-placeholer").append(
-					"<div class='block AniStar'><a target=_blank href='https://anistar.org/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link '>Найти на AniStar</a></div>"
+					"<div class='block AniStar'><a target=_blank href='https://anistar.org/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link'>Найти на AniStar</a></div>"
                     )
                     $(".watch-online-placeholer").append(
-					"<div class='block AnimeJoy'><a target=_blank href='https://animejoy.ru/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link '>Найти на AnimeJoy (Субтитры)</a></div>"
+					"<div class='block AnimeJoy'><a target=_blank href='https://animejoy.ru/index.php?do=search&subaction=search&search_start=1&full_search=0&result_from=1&story=" + name + "' class='b-link_button dark watch_link'>Найти на AnimeJoy (Субтитры)</a></div>"
                     );
 
 				}
